@@ -1,6 +1,7 @@
-
-import streamlit as st
+import sys
 import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+import streamlit as st
 from datetime import datetime
 from db.guardar_en_sqlite import guardar_en_sqlite
 from export.generar_pdf import generar_pdf
