@@ -1,6 +1,8 @@
 import sys
 import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from db.crear_base_datos import crear_base_datos
+crear_base_datos()  # Esto asegura que el archivo y las tablas existan
 import streamlit as st
 from datetime import datetime
 from db.guardar_en_sqlite import guardar_en_sqlite
